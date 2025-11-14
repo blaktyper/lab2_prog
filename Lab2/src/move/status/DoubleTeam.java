@@ -1,0 +1,20 @@
+package move.status;
+
+import ru.ifmo.se.pokemon.*;
+
+public final class DoubleTeam extends StatusMove {
+    public DoubleTeam() {
+        super(Type.NORMAL, 0, 0);
+    }
+
+    @Override
+    protected String describe() {
+        return "использует Double Team------------";
+    }
+
+    @Override
+    protected void applySelfEffects(Pokemon pokemon) {
+        pokemon.setMod(Stat.EVASION, 1);
+        System.out.println(pokemon + " увеличил уклонение!----------");
+    }
+}
