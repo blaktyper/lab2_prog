@@ -14,7 +14,7 @@ public final class NightSlash extends PhysicalMove {
 
     @Override
     protected double calcCriticalHit(Pokemon attacker, Pokemon defender) {
-        // Увеличиваем шанс критического удара
+       
         return super.calcCriticalHit(attacker, defender) * 2;
     }
 }
